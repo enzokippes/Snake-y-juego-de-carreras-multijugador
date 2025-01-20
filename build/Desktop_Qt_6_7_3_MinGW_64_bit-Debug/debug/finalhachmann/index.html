@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #222222;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #333333;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #ff6347;
+            font-size: 4rem; /* Grande para darle protagonismo */
+            margin-bottom: 50px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .game-option {
+            margin-bottom: 15px;
+        }
+
+        .btn-play {
+            background-color: hsl(9, 100%, 64%);
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 1rem; /* Tamaño pequeño para las opciones */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 200px;
+        }
+
+        .btn-play:hover {
+            background-color: #ff6347;
+            transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el mouse */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: #ff6347;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>Portal de Juegos</h1>
+        <div class="game-option">
+            <button class="btn-play" onclick="window.location.href='race/index.html'">Jugar Race</button>
+        </div>
+        <div class="game-option">
+            <button class="btn-play" onclick="window.location.href='snake/index.html'">Jugar Snake</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Race to Snake. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

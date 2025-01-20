@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for a professional look -->
+    <style>
+        body {
+            background-color: #222222;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #111111;
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff6347;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        .game-card {
+            background-color: #333333;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .game-card-body {
+            padding: 20px;
+            background-color: #444444;
+            text-align: center;
+        }
+
+        .game-card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ff6347;
+        }
+
+        .game-card-text {
+            font-size: 1.1rem;
+            color: #bbb;
+        }
+
+        .btn-play {
+            background-color: hsl(9, 100%, 64%);
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-play:hover {
+            background-color: #ff6347;
+        }
+
+        footer {
+            background-color: #111111;
+            padding: 20px 0;
+            text-align: center;
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid"> 
+            <a class="navbar-brand" href="#">Race to Snake</a>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container text-center">
+        <h1 class="display-3">Welcome to Race to Snake</h1>
+        <p class="lead">Select a game to play</p>
+
+        <div class="row">
+            <!-- Game Card 1: Race 4 Game -->
+            <div class="col-md-6 mb-4">
+                <div class="game-card">
+                    <img src="img_race4.png" alt="Race Game">
+                    <div class="game-card-body">
+                        <h5 class="game-card-title">Race 4 Game</h5>
+                        <p class="game-card-text">Speed through the tracks and avoid obstacles. A thrilling race awaits you!</p>
+                        <button class="btn-play" onclick="window.location.href='race/index.html'">Play Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Card 2: Snake Game -->
+            <div class="col-md-6 mb-4">
+                <div class="game-card">
+                    <img src="img_snake.png" alt="Snake Game">
+                    <div class="game-card-body">
+                        <h5 class="game-card-title">Snake Game</h5>
+                        <p class="game-card-text">The classic snake game where you need to eat food to grow longer and avoid hitting the walls!</p>
+                        <button class="btn-play" onclick="window.location.href='snake/index.html'">Play Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Race to Snake. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
